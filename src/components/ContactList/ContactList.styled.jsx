@@ -5,9 +5,9 @@ export const ListContacts = styled.ul`
   display: flex;
   flex-direction: column;
   gap: 15px;
-  background-color: #7ec5f8;
+  background-color: #000;
   border-radius: 5px;
-  border: 2px solid #e9bb03;
+  border: 2px solid red;
 `;
 
 export const ListContactsItem = styled.li`
@@ -16,20 +16,21 @@ export const ListContactsItem = styled.li`
   align-items: baseline;
   font-size: 20px;
   font-style: italic;
+  color: #fff;
 `;
 
 export const ButtonDelete = styled.button`
   font-size: 18px;
   width: 100px;
-  background-color: #eef389;
+  background-color: #fff;
   color: black;
-  border: 2px solid #e9bb03;
+  border: 2px solid red;
   transition: all 250ms linear;
+  border-radius: 10px;
   :hover,
   :focus {
     background-color: red;
     transform: scale(1.12);
     box-shadow: 0 0 10px 0 red inset, 0 0 10px 4px grey;
-    border-color: black;
   }
 `;
